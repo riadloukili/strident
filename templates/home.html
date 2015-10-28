@@ -7,7 +7,12 @@
 
     <div ng-repeat="music in library" class="list card">
 
-      <span>{{ music.substr(0, music.lastIndexOf('.')) }}</span>
+      <div class="item item-avatar">
+        <img ng-src="data:image/png;base64,{{ (music.picture[0].data).toString('base64') }}">
+        <h2>{{ music.title }}</h2>
+        <p>{{ music.album + ' - ' + (music.albumartist.join(', ') || 'n/a') }} &bull; {{ (music.duration * 1000) | date:'mm:ss' }}
+        </p>
+      </div>
 
     </div>
 

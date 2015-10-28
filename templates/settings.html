@@ -2,6 +2,7 @@
   <ion-content>
     <ion-item><strong>Basic Settings</strong></ion-item>
     <ion-toggle>Full Screen</ion-toggle>
+    <ion-item ng-click="modal.show()">Music directory</ion-item>
     <ion-item><strong>Advenced Settings</strong></ion-item>
     <ion-toggle>Developer Tools</ion-toggle>
     <div class="padding">
@@ -9,3 +10,25 @@
     </div>
   </ion-content>
 </ion-view>
+
+<script type="text/ng-template" id="set-path-modal.html">
+  <ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">Set your new Music directory</h1>
+    </ion-header-bar>
+    <ion-content class="padding">
+
+      <div class="list list-inset">
+        <label class="item item-input">
+          <i class="icon ion-ios-folder-outline placeholder-icon"></i>
+          <input type="text" placeholder="New directory" ng-model="musicDir">
+        </label>
+      </div>
+
+      <div class="button-bar">
+        <button class="button button-balanced" ng-click="saveDir(musicDir)">Save</button>
+        <button class="button button-light" ng-click="modal.hide()">Cancel</button>
+      </div>
+    </ion-content>
+  </ion-modal-view>
+</script>

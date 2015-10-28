@@ -9081,6 +9081,3 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
-
-body {
-  cursor: url(../img/finger.png), auto; }
