@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/angular-gravatar/build/angular-gravatar.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!-- <script src="cordova.js"></script> -->
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+    <ion-nav-bar class="bar-positive" align-title="center">
+      <ion-nav-back-button class="button-clear"></ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-tabs class="tabs-striped tabs-top tabs-color-positive tabs-icon-only">
+
+
+
+      <ion-tab title="Home" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline" ui-sref="home">
+        <ion-nav-view name="home" animation="slide-left-right">
+        </ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Settings" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline" ui-sref="settings">
+        <ion-nav-view name="settings" animation="slide-left-right">
+        </ion-nav-view>
+      </ion-tab>
+
+
+
+    </ion-tabs>
+  </body>
+</html>

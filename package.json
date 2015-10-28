@@ -1,0 +1,14 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "author": "Riad Loukili <riad.loukili@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-prebuilt": "^0.34.1"
+  }
+}

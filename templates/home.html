@@ -1,0 +1,15 @@
+<ion-view view-title="My Music">
+  <ion-nav-buttons side="right">
+    <button class="button button-clear button-icon ion-ios-information-outline"></button>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-refresher pulling-text="Refresh..." pulling-icon="ion-ios-loop" spinner="android" on-refresh="doRefresh()"></ion-refresher>
+
+    <div ng-repeat="music in library" class="list card">
+
+      <span>{{ music.substr(0, music.lastIndexOf('.')) }}</span>
+
+    </div>
+
+  </ion-content>
+</ion-view>

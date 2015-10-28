@@ -1,0 +1,47 @@
+<ion-view view-title="About">
+  <ion-content class="padding">
+
+    <ion-refresher pulling-text="Pull to refresh..." pulling-icon="ion-ios-loop" spinner="android" on-refresh="doRefresh()"></ion-refresher>
+
+    <div class="list card" ng-repeat="author in authors">
+
+
+      <div class="item" ng-class="{'item-avatar': online}">
+        <img ng-if="online" ng-src="http://www.gravatar.com/avatar/{{md5(author.email)}}?size=50">
+        <h2>{{ author.name }}</h2>
+        <p>{{ author.function }}</p>
+      </div>
+
+      <div class="item item-body">
+        <p>
+          {{ author.about }}
+        </p>
+      </div>
+
+
+      <div class="item tabs tabs-secondary tabs-icon-top">
+        <a class="tab-item button button-dark button-clear" target="_blank" ng-href="https://github.com/{{ author.github }}">
+          <i class="icon ion-social-github-outline"></i>
+          Github
+        </a>
+        <a class="tab-item button button-balanced button-clear" target="_blank" ng-href="{{ author.url }}">
+          <i class="icon ion-ios-world-outline"></i>
+          Website
+        </a>
+        <a class="tab-item button button-potisive button-clear" target="_blank" ng-href="https://wwww.facebook.com/{{ author.facebook }}">
+          <i class="icon ion-social-facebook-outline"></i>
+          Facebook
+        </a>
+        <a class="tab-item button button-calm button-clear" target="_blank" ng-href="https://twitter.com/{{ author.twitter }}">
+          <i class="icon ion-social-twitter-outline"></i>
+          Twitter
+        </a>
+        <a class="tab-item button button-assertive button-clear" target="_blank" ng-href="mailto:{{ author.email }}">
+          <i class="icon ion-ios-email-outline"></i>
+          Email
+        </a>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>
