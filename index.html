@@ -20,17 +20,28 @@
     <script src="js/app.js"></script>
   </head>
   <body ng-app="strident">
-    <ion-nav-bar class="bar-positive" align-title="center">
+    <ion-nav-bar class="bar-assertive" align-title="center">
       <ion-nav-back-button class="button-clear"></ion-nav-back-button>
     </ion-nav-bar>
-    <ion-tabs class="tabs-striped tabs-top tabs-color-positive tabs-icon-only">
+    <ion-tabs class="tabs-striped tabs-color-assertive tabs-icon-top">
 
 
 
-      <ion-tab title="Home" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline" ui-sref="home">
+      <ion-tab title="My Music" icon-on="ion-ios-musical-notes" icon-off="ion-ios-musical-notes" ui-sref="home">
         <ion-nav-view name="home" animation="slide-left-right">
         </ion-nav-view>
       </ion-tab>
+
+      <ion-tab title="Playlists" icon-on="ion-ios-list" icon-off="ion-ios-list-outline">
+        <ion-nav-view name="" animation="slide-left-right">
+        </ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Download" icon-on="ion-ios-download" icon-off="ion-ios-download-outline">
+        <ion-nav-view name="" animation="slide-left-right">
+        </ion-nav-view>
+      </ion-tab>
+
 
       <ion-tab title="Settings" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline" ui-sref="settings">
         <ion-nav-view name="settings" animation="slide-left-right">
@@ -40,5 +51,6 @@
 
 
     </ion-tabs>
+
   </body>
 </html>

@@ -68,7 +68,7 @@ angular.module('strident', ['ionic', 'ui.gravatar'])
 .controller('HomeCtrl', function ($scope, $rootScope) {
 
 
-  var readdir = function () {
+  ($rootScope.readdir = function () {
     $rootScope.fs.readdir($rootScope.appSettings.musicPath, function (err, list) {
       if (err) throw err;
       var music = [];
@@ -82,12 +82,11 @@ angular.module('strident', ['ionic', 'ui.gravatar'])
       });
       $scope.library = music;
     });
-  }
+  })();
 
-  readdir();
 
   $scope.doRefresh = function () {
-    readdir();
+    $rootScope.readdir();
     $scope.$broadcast('scroll.refreshComplete');
   };
 

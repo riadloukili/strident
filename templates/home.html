@@ -1,17 +1,24 @@
 <ion-view view-title="My Music">
-  <ion-nav-buttons side="right">
-    <button class="button button-clear button-icon ion-ios-information-outline"></button>
-  </ion-nav-buttons>
   <ion-content>
     <ion-refresher pulling-text="Refresh..." pulling-icon="ion-ios-loop" spinner="android" on-refresh="doRefresh()"></ion-refresher>
 
+    <!-- <div class="list" ng-model="searchInput">
+      <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+          <i class="icon ion-ios-search placeholder-icon"></i>
+          <input type="text" placeholder="Search song">
+        </label>
+      </div>
+    </div> -->
+
     <div ng-repeat="music in library" class="list card">
 
-      <div class="item item-avatar">
+      <div class="item item-avatar" style="">
         <img ng-src="data:image/png;base64,{{ (music.picture[0].data).toString('base64') }}">
-        <h2>{{ music.title }}</h2>
-        <p>{{ music.album + ' - ' + (music.albumartist.join(', ') || 'n/a') }} &bull; {{ (music.duration * 1000) | date:'mm:ss' }}
-        </p>
+        <button style="float: right;" class="button button-clear button-assertive button-icon ion-ios-more"></button>
+        <h2>{{ music.title || 'n/a' }}</h2>
+        <p>{{ (music.albumartist.join(', ') || 'n/a') + ' - ' + music.album }} &bull; {{ (music.duration * 1000) | date:'mm:ss' }}</p>
+
       </div>
 
     </div>
