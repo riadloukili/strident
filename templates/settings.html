@@ -1,10 +1,11 @@
 <ion-view view-title="Settings">
   <ion-content>
     <ion-item><strong>Basic Settings</strong></ion-item>
-    <ion-toggle>Play in background</ion-toggle>
+    <ion-toggle ng-click="playInBG(!appSettings.playInBG)" ng-checked="appSettings.playInBG">Play in background</ion-toggle>
+    <ion-toggle ng-click="win.setFullScreen(!win.isFullScreen())">Full Screen</ion-toggle>
     <ion-item>Music directory <button class="button button-small button-assertive button-outline" ng-click="modal.show()" style="margin-bottom:-10px;margin-top:-5px;float:right;">Change</button></ion-item>
     <ion-item><strong>Advenced Settings</strong></ion-item>
-    <ion-toggle>Developer Tools</ion-toggle>
+    <ion-toggle ng-click="web.toggleDevTools()">Developer Tools</ion-toggle>
     <div class="padding">
       <button ui-sref="about" ng-click="showLoading()" class="button button-block button-assertive button-outline">About us</button>
     </div>
@@ -26,7 +27,7 @@
       </div>
 
       <p>
-        <small>Windows: e.g <span class="positive">C:/Users/YourName/Music</span> <br>Linux and Mac: e.g <span class="positive">/home/user/Music</span> <br><span class="assertive">Please make sure that directory exists, and you didn't put slash in the end.</span></small>
+        <small>Windows: e.g, <span class="positive">C:/Users/YourName/Music</span> <br>Linux and Mac: e.g, <span class="positive">/home/user/Music</span> <br><span class="assertive">Please make sure that directory exists, and you didn't put slash in the end.</span></small>
       </p>
 
       <div class="button-bar">
