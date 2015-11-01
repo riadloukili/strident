@@ -1,4 +1,5 @@
-# About Strident:
+# Strident [![Build Status](https://travis-ci.org/riadloukili/strident.svg?branch=master)](https://travis-ci.org/riadloukili/strident)
+## About:
 
 Strident is a music open-source app based on Electron Framework by Github and Ionic Framework.
 
