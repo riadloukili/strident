@@ -1,0 +1,18 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-assertive">
+    <h1 class="title">Set your new Music directory</h1>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-ios-folder-outline placeholder-icon"></i>
+        <input type="text" placeholder="New directory" ng-model="musicDir">
+      </label>
+    </div>
+    <p><small>Windows: e.g, <span class="positive">C:/Users/YourName/Music</span> <br>Linux and Mac: e.g, <span class="positive">/home/user/Music</span> <br><span class="assertive">Please make sure that directory exists, and you didn't put slash in the end.</span></small></p>
+    <div class="button-bar">
+      <button class="button button-outline button-balanced" ng-click="saveDir(musicDir);readdir()">Save</button>
+      <button class="button button-outline button-assertive" ng-click="pathModal.hide()">Cancel</button>
+    </div>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,24 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-assertive">
+    <h1 class="title">Set your music playing settings</h1>
+  </ion-header-bar>
+  <ion-content>
+    <ion-toggle ng-model="s.shufflePlaying" ng-init="s.shufflePlaying = appSettings.shufflePlaying">Shuffle Playing</ion-toggle>
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Repeat
+      </div>
+      <select ng-model="s.repeatPlaying" ng-init="s.repeatPlaying = appSettings.repeatPlaying">
+        <option value="off">Off</option>
+        <option value="once">Once</option>
+        <option value="all">All</option>
+      </select>
+    </label>
+    <div class="padding">
+      <div class="button-bar">
+        <button ng-click="savePlayingSettings(s)" class="button button-outline button-balanced">Save</button>
+        <button ng-click="playingModal.hide()" class="button button-outline button-assertive">&times; Close</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>
