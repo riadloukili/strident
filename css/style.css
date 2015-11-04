@@ -1,1 +1,14 @@
 /* Empty. Add your own CSS if you like */
+.pointer {
+  cursor: pointer;
+}
+.music-art {
+  transition: all .2s ease-in-out;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+}
+.music-art:hover {
+  transform: scale(1.2);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+}

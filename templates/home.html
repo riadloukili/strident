@@ -17,15 +17,13 @@
         </label>
       </div>
     </div> -->
-
-
     <div ng-repeat="music in library" class="list card">
 
-      <div class="item item-avatar-left" ng-click="playMusic(music)">
-        <img ng-src="data:image/png;base64,{{ (music.picture[0].data).toString('base64') }}">
+      <div class="item item-avatar-left">
+        <img class="pointer music-art" ng-src="data:image/png;base64,{{ (music.picture[0].data).toString('base64') }}" ng-click="playMusic(music)">
         <button style="float: right;" class="button button-clear button-assertive button-icon ion-ios-more"></button>
-        <h2>{{ music.title || 'n/a' }}</h2>
-        <p>{{ (music.artist.join(', ') || music.albumartist.join(', ') || 'n/a') + ' - ' + music.album }} &bull; {{ (music.duration * 1000) | date:'mm:ss' }}</p>
+        <h2 class="pointer" ng-click="playMusic(music)">{{ music.title || 'n/a' }}</h2>
+        <p class="pointer" ng-click="playMusic(music)">{{ (music.artist.join(', ') || music.albumartist.join(', ') || 'n/a') + ' - ' + music.album }} &bull; {{ (music.duration * 1000) | date:'mm:ss' }}</p>
 
       </div>
 

@@ -10,13 +10,13 @@
     "about": "In this you can write whatever you want... About yourself and stuffs..."
   },
   {
-    "name": "Riad Loukili",
-    "function": "Web Developer",
-    "email": "riad.loukili@outlook.com",
-    "url": "https://loukili.me",
+    "name": "Lorem Ipsum",
+    "function": "Web Designer",
+    "email": "john@doe.dev",
+    "url": "https://doe.dev",
     "github": "riadloukili",
     "facebook": "rizooox",
     "twitter": "riad_loukili",
-    "about": "In this you can write whatever you want... About yourself and stuffs..."
+    "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }
 ]
