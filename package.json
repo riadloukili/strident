@@ -1,13 +1,19 @@
 {
   "name": "strident",
-  "version": "1.0.0",
-  "description": " Strident is a music open-source app based on Electron Framework by Github and Ionic Framework.",
+  "version": "0.1.0",
+  "description": "Strident is a music open-source app based on Electron Framework by Github and Ionic Framework.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:riadloukili/strident.git"
+  },
   "keywords": [
     "Music",
     "Free",
     "Electron",
     "Ionic"
   ],
+  "engines": {},
+  "devDependencies": {},
   "main": "main.js",
   "author": "Riad Loukili <riad.loukili@outlook.com>",
   "license": "MIT",
