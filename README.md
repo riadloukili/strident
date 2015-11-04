@@ -5,10 +5,12 @@ Strident is a music open-source app based on Electron Framework by Github and Io
 
 ### Want to contribute ?
   - Make sure you have **Nodejs** and **Electron** (globally) installed.
-  - *Clone* the project: ``git clone https://github.com/riadloukili/strident``
+  - [Fork](https://github.com/riadloukili/strident/fork) the project.
+  - *Clone* the project you forked: ``git clone https://github.com/{your-username}/strident``
   - Change directory to project folder: ``cd strident``
   - *Install* dependencies: ``npm install``
   - Run the app: ``electron .``
+  - Send pull request.
 
 ## License
 This project is under MIT License (Click [here](http://rl.mit-license.org/Strident) for more information).
