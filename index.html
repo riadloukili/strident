@@ -18,7 +18,7 @@
     <ion-nav-bar class="bar-assertive" align-title="center">
       <ion-nav-back-button class="button-clear"></ion-nav-back-button>
       <ion-nav-buttons side="right">
-        <button ng-hide="$location.path() == '/home'" class="button" ng-class="{'ion-ios-pause': !music.audio.paused, 'ion-ios-play': music.audio.paused}" ng-click="music.audio.paused? music.play() : music.pause()"></button>
+        <button ng-hide="$location.path() == '/home' || !firstPlayed" class="button" ng-class="{'ion-ios-pause': !music.audio.paused, 'ion-ios-play': music.audio.paused}" ng-click="music.audio.paused? music.play() : music.pause()"></button>
       </ion-nav-buttons>
     </ion-nav-bar>
 
