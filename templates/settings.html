@@ -6,7 +6,7 @@
     <ion-toggle ng-click="win.setFullScreen(!win.isFullScreen())">Full Screen</ion-toggle>
     <ion-item>Music directory <button class="button button-small button-assertive button-outline" ng-click="pathModal.show()" style="margin-bottom:-10px;margin-top:-5px;float:right;">Change</button></ion-item>
     <ion-item><strong>Advenced Settings</strong></ion-item>
-    <ion-toggle ng-click="web.toggleDevTools()">Developer Tools</ion-toggle>
+    <ion-toggle ng-click="web.toggleDevTools()" ng-checked="web.isDevToolsOpened()">Developer Tools</ion-toggle>
     <div class="padding">
       <button ui-sref="about" ng-click="showLoading()" class="button button-block button-assertive button-outline">About us</button>
     </div>
