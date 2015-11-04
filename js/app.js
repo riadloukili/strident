@@ -110,14 +110,20 @@ angular.module('strident', ['ionic', 'ui.gravatar', 'ngAudio'])
     pause: angular.noop,
     nothingPlaying: true
   };
+
   $rootScope.firstPlayed = false;
+
   $scope.playMusic = function (music) {
-    if (!$rootScope.music.nothingPlaying) {
+    if (!$rootScope.music.nothingPlaying)
       $rootScope.music.restart();
-    }
+
     $rootScope.firstPlayed = true;
     $rootScope.music = ngAudio.play("file://" + music.path);
-  }
+    $rootScope.music.metadata = music;
+
+    if ($rootScope.appSettings.repeatPlaying == "once")
+      $rootScope.music.loop = true;
+  };
 
 })
 
