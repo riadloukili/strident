@@ -13,4 +13,4 @@ Strident is a music open-source app based on Electron Framework by Github and Io
   - Send pull request.
 
 ## License
-This project is under MIT License (Click [here](http://rl.mit-license.org/Strident) for more information).
+This project is under MIT License (Click [here](http://rl.mit-license.org/Strident) for more information). :fire:
