@@ -3,6 +3,8 @@
 
 Strident is a music open-source app based on Electron Framework by Github and Ionic Framework. :notes:
 
+**Sorry** but we don't have yet a **dist** version :cry:, but it will be *soon*.
+
 ### Want to contribute ?
   - Make sure you have **Nodejs** and **Electron** (globally) installed.
   - [Fork](https://github.com/riadloukili/strident/fork) the project.
